@@ -910,7 +910,7 @@ mod tests {
     }
 
     #[test]
-    fn test_bif_erlang_is_list_1() {
+    fn test_bif_erlang_is_tuple_1() {
         let vm = vm::Machine::new();
         let module: *const module::Module = std::ptr::null();
         let process = process::allocate(&vm.state, module).unwrap();
@@ -926,7 +926,7 @@ mod tests {
     }
 
     #[test]
-    fn test_bif_erlang_is_tuple_1() {
+    fn test_bif_erlang_is_list_1() {
         let vm = vm::Machine::new();
         let module: *const module::Module = std::ptr::null();
         let process = process::allocate(&vm.state, module).unwrap();
